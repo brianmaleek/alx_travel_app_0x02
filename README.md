@@ -38,13 +38,15 @@ Integrate the Chapa API for handling payments, allowing users to make bookings w
 - **Implement Payment Workflow:**
 
   - When a user creates a booking, initiate the payment process and provide them with a link to complete the payment via Chapa.
-On successful payment, send a confirmation email to the user (using Celery for background tasks).
-Handle any errors or payment failures gracefully, updating the status in the Payment model accordingly.
-Test Payment Integration:
+  - On successful payment, send a confirmation email to the user (using Celery for background tasks).
+  - Handle any errors or payment failures gracefully, updating the status in the `Payment` model accordingly.
 
-Use Chapa’s sandbox environment to test payment initiation and verification.
-Ensure the entire payment workflow functions correctly, from initiation to status verification.
-Note: Include screenshots or logs demonstrating successful payment initiation, verification, and status update in the Payment model.
+- **Test Payment Integration:**
+
+  - Use Chapa’s sandbox environment to test payment initiation and verification.
+  - Ensure the entire payment workflow functions correctly, from initiation to status verification.
+
+**Note**: Include screenshots or logs demonstrating successful payment initiation, verification, and status update in the Payment model.
 
 **Repo:**
 
